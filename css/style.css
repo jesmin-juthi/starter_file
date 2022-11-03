@@ -1,5 +1,4 @@
 /* Resets */
-
 *,
 *:after,
 *:before {
@@ -21,7 +20,7 @@ a:hover {
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 ul,
@@ -66,4 +65,93 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary);
+}
+
+/* Extra classes */
+
+.wrapper{
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.text-content{
+  width: 70%;
+  margin: auto;
+}
+
+/* Basic Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+}
+h1{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+h2{
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+h3{}
+
+h4{
+
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: .5rem;
+}
+
+h5{
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .5rem
+}
+
+p{
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+/* For default button design */
+.main-btn, .snd-btn{
+  display: inline-block;
+  padding: .625rem 1.875rem;
+  line-height: 25px;
+  font-size: .9375rem;
+  font-weight: 600;
+  border: .1875rem solid;
+  text-transform: capitalize;
+  box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn{
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.snd-btn{
+  border-color: var(--white);
+  background-color: var(--white);
+  color: var(--text);
+}
+
+.main-btn:hover{
+  background: transparent;
+  color: var(--primary);
+}
+
+.snd-btn:hover{
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
 }
